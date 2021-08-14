@@ -1,5 +1,5 @@
 import json, os, sys
-import django_heroku
+# import django_heroku
 
 from pathlib import Path
 from setup import env
@@ -36,7 +36,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.locale.LocaleMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+    # 'whitenoise.middleware.WhiteNoiseMiddleware',
 
 ]
 
@@ -122,4 +122,4 @@ CORS_EXPOSE_HEADERS = ['x-csrftoken']
 # Locale
 LOCALE_PATHS = [ BASE_DIR, 'locale' ]
 
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
