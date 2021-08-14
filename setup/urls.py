@@ -11,6 +11,7 @@ router = routers.DefaultRouter()
 router.register('/m2b', UrlsViewSet, basename='Urls')
 
 urlpatterns = [
+    path('', IndexView.as_view()),
     path('api', include(router.urls)),
     path('m2b/', include('short_url.urls')),
     path('admin/', admin.site.urls),

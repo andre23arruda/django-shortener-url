@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início</title>
+
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
+
+</head>
+<body>
+    <header class="text-center m-5">
+        <h1>O quê deseja ver?</h1>
+    </header>
+
+    <section class="container">
+        <div class="d-grid gap-2">
+            <a href="{% url 'admin:index' %}" class="btn btn-primary btn-lg  m-3">Admin</a>
+            <a href="/api" class="btn btn-primary btn-lg m-3">API</a>
+        </div>
+    </section>
+
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+
+</body>
+</html>
